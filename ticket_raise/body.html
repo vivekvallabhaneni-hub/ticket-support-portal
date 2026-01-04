@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" href="body.css">
+</head>
+
+<body>
+      <div class="heading">
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Log in</a></li>
+            <li class="lang">
+                
+                <a href="" class="lang-btn"> <img src="us-flag.png" width="16" style="vertical-align: middle;"> English</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="main">
+        <div class="main2">
+            <h2>Create Ticket</h2>
+            <p>This is form for creating tickets. Fill the form and send us your issues/doubts/suggestions. Our support
+                system will answer it as soon as possible.</p>
+            <form id="forminput">
+                <label for="emailinput">Email</label>
+                <input type="email" id="emailinput" placeholder="Email">
+                <label for="nameinput">Full name</label>
+                <input type="text" id="nameinput" placeholder="Full name">
+                <label for="titleinput">Title</label>
+                <input type="text" id="titleinput" placeholder="Title">
+                <label for="departmentinput">Department</label>
+                <select name="" id="departmentinput">
+                    <option value="Help and Support">Help and Support</option>
+                </select>
+                <label for="contentinput">Content</label>
+                <div class="content-box">
+                    <div class="toolbar">
+                        Normal | B | I | U | • | 1. | 🔗 | </>
+                    </div>
+                    <textarea placeholder="Write your message..." id="contentinput"></textarea>
+                </div>
+                <button type="submit">Create Ticket</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Developed By Sai Vivek Vallabhaneni</p>
+    </footer>
+    <script src="body.js"></script>
+</body>
+
+</html>
