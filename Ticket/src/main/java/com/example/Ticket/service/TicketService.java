@@ -6,6 +6,8 @@ import com.example.Ticket.repository.TicketRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class TicketService {
@@ -20,4 +22,13 @@ public class TicketService {
         repo.save(ticket);
         return "Ticket Saved Successfully ";
     }
+
+    public List<Ticket> getAllTickets() {
+        return repo.findAll();
+    }
+    public Ticket getTicketById(Long id) {
+        return repo.findById(id)
+                .orElseThrow(() -> new RuntimeException("Ticket not found"));
+    }
+
 }
